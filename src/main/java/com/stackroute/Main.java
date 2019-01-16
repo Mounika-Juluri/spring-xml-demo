@@ -12,7 +12,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
 
 //
