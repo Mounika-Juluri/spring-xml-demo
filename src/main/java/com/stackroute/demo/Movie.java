@@ -1,4 +1,4 @@
-package com.stackroute.domain;
+package com.stackroute.demo;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
@@ -46,13 +46,17 @@ public class Movie implements ApplicationContextAware, BeanFactoryAware, BeanNam
     }
 
     public void setBeanName(String s) {
-        System.out.println("inside bean name");
+        System.out.println("inside bean name"+s);
         this.beanName=s;
 
     }
 
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         System.out.println("inside application context");
-        this.applicationContext=applicationContext;
+       this.applicationContext=applicationContext;
+        System.out.println( applicationContext);
+
+
     }
 }
+
